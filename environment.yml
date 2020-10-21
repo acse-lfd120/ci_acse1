@@ -11,3 +11,4 @@ dependencies:
   - sympy
   - flake8
   - pytest
+  - pandas
