@@ -1,7 +1,5 @@
 from simple_functions import factorial, pi
 
-from functools import lru_cache
-
 __all__ = ['sin']
 
 
