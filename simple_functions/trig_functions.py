@@ -1,4 +1,4 @@
-from simple_functions import factorial
+from simple_functions import factorial, pi
 
 from functools import lru_cache
 
@@ -6,6 +6,8 @@ __all__ = ['sin']
 
 
 def sin(x):
+    if abs(x) >= 2*pi():
+        x -= 2*pi()*(x // (2*pi()))
     max_n = 1000
     min_diff = 1e-6
     sin_x = 0

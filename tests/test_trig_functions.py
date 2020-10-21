@@ -10,7 +10,9 @@ class TestSin(object):
     @pytest.mark.parametrize('number, expected', [
         (0, 0),
         (np.pi/2, 1),
-        (-0.5, np.sin(-0.5))
+        (-0.5, np.sin(-0.5)),
+        (20 * np.pi, 0),
+        (-20.5 * np.pi, -1)
     ])
     def test_sin(self, number, expected):
         '''Test computation of sin(x)'''
