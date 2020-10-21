@@ -22,12 +22,17 @@ jobs:
 
       matrix:
         name: [
-          python36-ubuntu1804
+          python36-ubuntu1804,
+          python38-ubuntu2004
         ]
         include:
         - name: python36-ubuntu1804
           python-version: 3.6
           os: ubuntu-18.04
+
+        - name: python38-ubuntu2004
+          python-version: 3.8
+          os: ubuntu-20.04
 
 
     steps:
