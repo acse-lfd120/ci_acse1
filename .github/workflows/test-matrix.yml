@@ -23,7 +23,8 @@ jobs:
       matrix:
         name: [
           python36-ubuntu1804,
-          python38-ubuntu2004
+          python38-ubuntu2004,
+          python37-macOS
         ]
         include:
         - name: python36-ubuntu1804
@@ -33,6 +34,10 @@ jobs:
         - name: python38-ubuntu2004
           python-version: 3.8
           os: ubuntu-20.04
+
+        - name: python37-macOS
+          python-version: 3.7
+          os: macos-latest
 
 
     steps:
